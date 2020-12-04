@@ -387,7 +387,7 @@ ax[2].set_title('Распределение Коши, n=100')
 #plt.show()#Коши100
 
 fig, ax = plt.subplots(1, 3)
-r = uniform.rvs(size=20)
+r = uniform.rvs(-sqrt(3),2*sqrt(3),20)
 x = np.linspace(*rng, 100)
 y1 = uniform.pdf(x,-sqrt(3),2*sqrt(3))
 y2 = kernel_app(x, r, 0.5)
@@ -414,7 +414,7 @@ ax[2].set_title('Равномерное распределение, n=20')
 #plt.show()#Равномерное20
 
 fig, ax = plt.subplots(1, 3)
-r = uniform.rvs(size=60)
+r = uniform.rvs(-sqrt(3),2*sqrt(3),60)
 x = np.linspace(*rng, 100)
 y1 = uniform.pdf(x,-sqrt(3),2*sqrt(3))
 y2 = kernel_app(x, r, 0.5)
@@ -441,7 +441,7 @@ ax[2].set_title('Равномерное распределение, n=60')
 #plt.show()#Равномерное60
 
 fig, ax = plt.subplots(1, 3)
-r = uniform.rvs(size=100)
+r = uniform.rvs(-sqrt(3),2*sqrt(3),100)
 x = np.linspace(*rng, 100)
 y1 = uniform.pdf(x,-sqrt(3),2*sqrt(3))
 y2 = kernel_app(x, r, 0.5)
